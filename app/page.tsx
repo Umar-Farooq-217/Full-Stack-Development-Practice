@@ -32,7 +32,7 @@ export default function Home() {
 // 3rd Method of Arrays
 
 const arr2:string[] = Array.of('ali','uamr','rizwan')
-console.log(arr2);
+// console.log(arr2);
 // console.log('push',arr2.push('usman'));
 // console.log(arr2);
 // console.log('pop',arr2.pop());
@@ -57,11 +57,15 @@ console.log(arr2);
   
 //  }
 
-arr2.forEach((ar)=>{
-  console.log(ar);
+// arr2.forEach((ar)=>{
+//   console.log(ar);
   
-})
+// })
 
+// arr2.map((ar:string)=>{
+// console.log('M ' + ar );
+
+// })
 
 
 
