@@ -69,9 +69,14 @@ const arr2:string[] = Array.of('ali','uamr','rizwan')
 
 
 
-arr2.filter((ar2:string)=>  ar2 === 'ali'
-console.log('well done');
-)
+const resultArrays = arr2.filter((ar:string)=>{
+  if(ar==='li'){
+    return true
+  }else{
+    return false
+  }
+})
+console.log(resultArrays);
 
 
 
