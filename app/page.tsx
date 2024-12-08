@@ -81,34 +81,53 @@ export default function Home() {
 
 // -----------------Objects------------------------
 // type Alias 
+// type Student = {
+// name:string;
+// rollNo:number;
+// address:{
+//   colony:string;
+//   block:number
+// }
+// }
+// const student:Student = {
+//   name:'umar',
+//   rollNo:3,
+//   address:{
+//     colony : 'faisal town',
+//     block :7
+//   }
+// }
+// const student1:Student = {
+//   name:'ali',
+//   rollNo:3,
+//   address:{
+//     colony : 'faisal town',
+//     block :7
+//   }
+// }
+
+// console.log(student);
+// console.log(student1);
+
+// call signature method 
+
 type Student = {
 name:string;
-rollNo:number;
-address:{
-  colony:string;
-  block:number
-}
-}
-const student:Student = {
-  name:'umar',
-  rollNo:3,
-  address:{
-    colony : 'faisal town',
-    block :7
-  }
-}
-const student1:Student = {
-  name:'ali',
-  rollNo:3,
-  address:{
-    colony : 'faisal town',
-    block :7
-  }
+age:number;
+greet:(country:string)=>string
 }
 
-console.log(student);
-console.log(student1);
-
+const students:Student={
+  name:'farooq',
+  age:43,
+  greet:(country):string=>`Hi my name is ${students.name} and my age is ${students.age} and my country is ${country}`
+}
+const introduction :(student:Student)=>string = (students:Student)=>{
+  const {name,age}= students
+  return `my name is ${name} and my age is ${age} and i live in ${country}`
+}
+console.log(...data:introduction(student));
+console.log(...data:student.greet(country:'pk'));
 
   
   
