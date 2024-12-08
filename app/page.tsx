@@ -31,7 +31,7 @@ export default function Home() {
 
 // 3rd Method of Arrays
 
-const arr2:string[] = Array.of('ali','uamr','rizwan')
+// const arr2:string[] = Array.of('ali','uamr','rizwan')
 // console.log(arr2);
 // console.log('push',arr2.push('usman'));
 // console.log(arr2);
@@ -69,15 +69,45 @@ const arr2:string[] = Array.of('ali','uamr','rizwan')
 
 
 
-const resultArrays = arr2.filter((ar:string)=>{
-  if(ar==='li'){
-    return true
-  }else{
-    return false
-  }
-})
-console.log(resultArrays);
+// const resultArrays = arr2.filter((ar:string)=>{
+//   if(ar==='li'){
+//     return true
+//   }else{
+//     return false
+//   }
+// })
+// console.log(resultArrays);
 
+
+// -----------------Objects------------------------
+// type Alias 
+type Student = {
+name:string;
+rollNo:number;
+address:{
+  colony:string;
+  block:number
+}
+}
+const student:Student = {
+  name:'umar',
+  rollNo:3,
+  address:{
+    colony : 'faisal town',
+    block :7
+  }
+}
+const student1:Student = {
+  name:'ali',
+  rollNo:3,
+  address:{
+    colony : 'faisal town',
+    block :7
+  }
+}
+
+console.log(student);
+console.log(student1);
 
 
   
