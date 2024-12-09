@@ -111,25 +111,76 @@ export default function Home() {
 
 // call signature method 
 
-type Student = {
-name:string;
-age:number;
-greet:(country:string)=>string
-}
+// type Student = {
+// name:string;
+// age:number;
+// greet:(country:string)=>string
+// }
 
-const students:Student={
-  name:'farooq',
-  age:43,
-  greet:(country):string=>`Hi my name is ${students.name} and my age is ${students.age} and my country is ${country}`
-}
-const introduction :(student:Student)=>string = (students:Student)=>{
-  const {name,age}= students
-  return `my name is ${name} and my age is ${age} and i live in ${country}`
-}
-console.log(...data:introduction(student));
-console.log(...data:student.greet(country:'pk'));
+// const students:Student={
+//   name:'farooq',
+//   age:43,
+//   greet:(country):string=>`Hi my name is ${students.name} and my age is ${students.age} and my country is ${country}`
+// }
+// console.log(students);
 
-  
+// const introduction : (student:Student)=>string = (students:Student)=>{
+//   const {name,age} = students
+//   return `Hi my name is ${name} and age is ${age} and  i live in ${country}`
+// }
+// console.log(students.greet('pakistan'));
+// console.log(introduction());
+// console.log(...data:introduction(students));
+
+// type Product = {
+//   product: string;
+//   price:number;
+//   description:(country:string)=>string
+// }
+//   const products:Product={
+//     product:'laptop',
+//     price:456,
+//     description:(country):string =>`Hi this is ${products.product} and his price is ${products.price} and this is take from ${country}`
+//   }
+//   console.log(products.description('india'));
+
+
+// Enums in ts
+enum Roles {
+  user='user',
+  admin='admin'
+}
+type loginDetails = {
+  email:string;
+  password:string;
+  role:Roles
+}
+const person4:loginDetails = {
+  email:'ufmarE@gmail.com',
+  password:'245umar',
+  role:Roles.user
+}
+const person5:loginDetails = {
+  email:'uf@gmail.com',
+  password:'umar',
+  role:Roles.admin
+}
+console.log(person4,'this is unable for website updating');
+console.log(person5,'this is able for website updating');
+
+// Tupples in TS 
+
+type Teacher =readonly [string,number,string]
+// readonly property not allow to add data without defination
+const teacherDetails : Teacher = ['umar', 55 , 'male']
+const teacher1Details : Teacher = ['ali', 55 , 'male']
+// const teacher2Details = teacher1Details.push('sakoon')
+console.log(teacherDetails);
+console.log(teacher1Details);
+
+
+
+
   
   return (
     <div >
