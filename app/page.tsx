@@ -146,39 +146,89 @@ export default function Home() {
 
 
 // Enums in ts
-enum Roles {
-  user='user',
-  admin='admin'
-}
-type loginDetails = {
-  email:string;
-  password:string;
-  role:Roles
-}
-const person4:loginDetails = {
-  email:'ufmarE@gmail.com',
-  password:'245umar',
-  role:Roles.user
-}
-const person5:loginDetails = {
-  email:'uf@gmail.com',
-  password:'umar',
-  role:Roles.admin
-}
-console.log(person4,'this is unable for website updating');
-console.log(person5,'this is able for website updating');
+// enum Roles {
+//   user='user',
+//   admin='admin'
+// }
+// type loginDetails = {
+//   email:string;
+//   password:string;
+//   role:Roles
+// }
+// const person4:loginDetails = {
+//   email:'ufmarE@gmail.com',
+//   password:'245umar',
+//   role:Roles.user
+// }
+// const person5:loginDetails = {
+//   email:'uf@gmail.com',
+//   password:'umar',
+//   role:Roles.admin
+// }
+// console.log(person4,'this is unable for website updating');
+// console.log(person5,'this is able for website updating');
 
-// Tupples in TS 
+// // Tupples in TS 
 
-type Teacher =readonly [string,number,string]
-// readonly property not allow to add data without defination
-const teacherDetails : Teacher = ['umar', 55 , 'male']
-const teacher1Details : Teacher = ['ali', 55 , 'male']
-// const teacher2Details = teacher1Details.push('sakoon')
-console.log(teacherDetails);
-console.log(teacher1Details);
+// type Teacher =readonly [string,number,string]
+// // readonly property not allow to add data without defination
+// const teacherDetails : Teacher = ['umar', 55 , 'male']
+// const teacher1Details : Teacher = ['ali', 55 , 'male']
+// // const teacher2Details = teacher1Details.push('sakoon')
+// console.log(teacherDetails);
+// console.log(teacher1Details);
 
+// const user = (value:string | number):string | boolean =>{
+//   if(typeof value === 'number'){
+//     return true
+//   }
+//   else if(typeof value === 'string'){
+//     return false
+//   }
+// }
+ 
 
+// console.log(user(3));
+// console.log(user('ali'));
+
+// Intersection in TS 
+
+// type Person = {
+//   name:string;
+//   age:number
+// }
+// type Employee = {
+//   id:number;
+//   department:string
+// }
+// type EmployeeDetails = Person & Employee;
+// const employee:EmployeeDetails = {
+//   name:'farooq',
+//   age:45,
+//   id:56,
+//   department:'it'
+// }
+// type EmployeeDetails = Person | Employee;
+// const employee:EmployeeDetails = {
+//   name:'farooq',
+//   age:45,
+//   id:56,
+//   department:'it'
+// }
+// console.log(employee);
+
+// Generic in TS 
+function logAndTurns <t>(value:t):t{
+ 
+  return value
+  
+}
+const numberResult = logAndTurns<number>(6)
+const strResult = logAndTurns<string>('hey')
+const boolResult = logAndTurns<boolean>(true)
+console.log(numberResult);
+console.log(strResult);
+console.log(boolResult);
 
 
   
