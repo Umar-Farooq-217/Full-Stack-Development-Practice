@@ -218,17 +218,25 @@ export default function Home() {
 // console.log(employee);
 
 // Generic in TS 
-function logAndTurns <t>(value:t):t{
+// function logAndTurns <t>(value:t):t{
  
-  return value
+//   return value
   
+// }
+// const numberResult = logAndTurns<number>(6)
+// const strResult = logAndTurns<string>('hey')
+// const boolResult = logAndTurns<boolean>(true)
+// console.log(numberResult);
+// console.log(strResult);
+// console.log(boolResult);
+
+function add<T,U>(a:T , b:U ,c:boolean){
+  console.log( a);
+  console.log( b);
+  return c ? `${a} and ${b} are combined` : 'a and b are not combined'
 }
-const numberResult = logAndTurns<number>(6)
-const strResult = logAndTurns<string>('hey')
-const boolResult = logAndTurns<boolean>(true)
-console.log(numberResult);
-console.log(strResult);
-console.log(boolResult);
+console.log(add('9',9,false));
+console.log(add('9',9,true));
 
 
   
