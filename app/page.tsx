@@ -230,13 +230,26 @@ export default function Home() {
 // console.log(strResult);
 // console.log(boolResult);
 
-function add<T,U>(a:T , b:U ,c:boolean){
-  console.log( a);
-  console.log( b);
-  return c ? `${a} and ${b} are combined` : 'a and b are not combined'
+// function add<T,U>(a:T , b:U ,c:boolean){
+//   console.log( a);
+//   console.log( b);
+//   return c ? `${a} and ${b} are combined` : 'a and b are not combined'
+// }
+// console.log(add('9',9,false));
+// console.log(add('9',9,true));
+
+
+interface Student {
+  name: string;
+  age:number
 }
-console.log(add('9',9,false));
-console.log(add('9',9,true));
+
+const student:Student={
+  name:'ali',
+  age:45
+}
+console.log(student);
+
 
 
   
