@@ -2,26 +2,25 @@ import React from 'react'
 
 export default function JsPractice() {
     
-var nums = [3,2,4];
-var target = 6;
+
 
 function twoSums (nums,target){
     for (let index = 0; index < nums.length; index++) {
-        const compliment = nums[index] - target
-       console.log(compliment);
+        const compliment =target- nums[index] 
+       console.log(`index ${index} , Number : ${nums[index]} and substraction : ${compliment}`);
       
-       for (let j = 0; j < array.length; j++) {
-        const element = array[j];
-        if(element===compliment){
-            return [index, j]
-        }
-       }
-       
+       for (let j = 0; j < nums.length; j++) {
+        const element = nums[j] ;
+        console.log(`index ${j} , Number : ${nums[j]} and substraction : ${element}`); 
     }
-    return []
+   
 }
-console.log(twoSums(nums, target));
-;
+var nums = [3, 2, 4];
+var target = 6;
+const result = twoSums(nums, target);
+
+console.log(result);
+
   return (
     <div>
       
@@ -29,3 +28,4 @@ console.log(twoSums(nums, target));
   )
 }
 
+}
