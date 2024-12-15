@@ -1,16 +1,31 @@
+import React from 'react'
+
+export default function JsPractice() {
+    
 var nums = [3,2,4];
 var target = 6;
 
 function twoSums (nums,target){
-    // let numMap = new map()
     for (let index = 0; index < nums.length; index++) {
         const compliment = nums[index] - target
        console.log(compliment);
-       if(compliment){
-        const num2 = compliment === nums[index]
+      
+       for (let j = 0; j < array.length; j++) {
+        const element = array[j];
+        if(element===compliment){
+            return [index, j]
+        }
        }
-       console.log(compliment,num2);
        
     }
+    return []
 }
-twoSums(nums, target);
+console.log(twoSums(nums, target));
+;
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
