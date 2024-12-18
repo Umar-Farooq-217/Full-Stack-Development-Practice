@@ -1,7 +1,7 @@
 'use client'
-import React from 'react'
 
 export default function BuiltInFunctionsInJs() {
+  
     // Math.random()
     // var r = Math.random();
     // var a1 = 1 ;
@@ -27,31 +27,33 @@ export default function BuiltInFunctionsInJs() {
     // arra.pop()
     // console.log(arra);
 
-//     const twoSums = (a , b )=>{
-// for (let index = 0; index < a.length; index++) {
-//     const element = b - a[index]
-//     for (let j = index + 1 ; j < a.length; j++) {
-//         if(a[j] === element )
-//         console.log(`'indices',${index} , ${j}`);
+    const twoSums = (a , b ,)=>{
+for (let index = 0; index < a.length; index++) {
+    const element = b - a[index];
+    for (let j = index + 1 ; j < a.length; j++) {
+        if(a[j] === element ){
+        console.log(`'indices',${index} , ${j}`);
+       
         
-//         return
-//     }
-   
-// } 
-// console.log("No two sums found");
-// }
-const twoSums = (a, b) => {
-    for (let index = 0; index < a.length; index++) {
-        const element = b - a[index]; // Find the target complement
-        for (let j = index + 1; j < a.length; j++) { // Start from index + 1 to avoid duplicates
-            if (a[j] === element) { // Check if the complement exists in the remaining array
-                console.log(`Indices: ${index}, ${j}`);
-                return; // Exit after finding the first match
-            }
-        }
+        return}
     }
-    console.log("No two sums found");
-};
+    
+   
+} 
+console.log("No two sums found");
+}
+// const twoSums = (a, b) => {
+//     for (let index = 0; index < a.length; index++) {
+//         const element = b - a[index]; // Find the target complement
+//         for (let j = index + 1; j < a.length; j++) { // Start from index + 1 to avoid duplicates
+//             if (a[j] === element) { // Check if the complement exists in the remaining array
+//                 console.log(`Indices: ${index}, ${j}`);
+//                 return; // Exit after finding the first match
+//             }
+//         }
+//     }
+//     console.log("No two sums found");
+// };
 
     var a = [2,3,4,5]
     var b = 7;
@@ -60,6 +62,7 @@ const twoSums = (a, b) => {
   return (
     <div>
       Built In Functions in Js
+     
     </div>
   )
 }
