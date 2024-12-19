@@ -26,39 +26,94 @@ export default function BuiltInFunctionsInJs() {
     // console.log(arra);
     // arra.pop()
     // console.log(arra);
-
-    const twoSums = (a , b ,)=>{
-for (let index = 0; index < a.length; index++) {
-    const element = b - a[index];
-    for (let j = index + 1 ; j < a.length; j++) {
-        if(a[j] === element ){
-        console.log(`'indices',${index} , ${j}`);
+ 
+//     const twoSums = (a , b ,)=>{
+// for (let index = 0; index < a.length; index++) {
+//     const element = b - a[index];
+//     for (let j = index + 1 ; j < a.length; j++) {
+//         if(a[j] === element ){
+//         console.log(`'indices',${index} , ${j}`);
        
         
-        return}
-    }
+//         return}
+//     }
     
    
-} 
-console.log("No two sums found");
+// } 
+// console.log("No two sums found");
+// }
+
+
+//     var a = [2,3,4,5]
+//     var b = 7;
+//     twoSums(a,b)
+
+
+// .toExponential() is used to reduce numbers and show number in power form
+// var num = 2356675679.45;
+// let num1 = num.toExponential(3)
+// console.log(num1);
+
+// toString() if you want to convert number to string
+// var num = 2356456;
+// var num2 = num.toString()
+// console.log(typeof num2);
+
+// Basic Constructor
+// First Method 
+
+// class Person  {
+//   constructor(name,age){
+//     this.name = name;
+//     this.age = age
+//   }
+//   greet(){
+//     console.log(`My name is ${this.name} and i am ${this.age} years old`);
+    
+//   }
+// }
+
+// const person1 = new Person('ali',43)
+// person1.greet()
+
+// use super in Second Method of Constructor 
+class Animal {
+  constructor(name){
+    this.name = name
+    
+  }
+speak(){
+  console.log(`${this.name} makes noise`);
+  
 }
-// const twoSums = (a, b) => {
-//     for (let index = 0; index < a.length; index++) {
-//         const element = b - a[index]; // Find the target complement
-//         for (let j = index + 1; j < a.length; j++) { // Start from index + 1 to avoid duplicates
-//             if (a[j] === element) { // Check if the complement exists in the remaining array
-//                 console.log(`Indices: ${index}, ${j}`);
-//                 return; // Exit after finding the first match
-//             }
-//         }
-//     }
-//     console.log("No two sums found");
-// };
+}
 
-    var a = [2,3,4,5]
-    var b = 7;
-    twoSums(a,b)
+class Dog extends Animal {
+  constructor(name,breed){
+    super(name)
+    this.breed = breed
+  }
+  describe(){
+    console.log(`This is ${this.name} and his breed is ${this.breed}`);
+    
+  }
+}
+const dog = new Dog('buddy','GERman shefer')
+dog.speak()
+dog.describe()
 
+class School {
+  constructor(teacher,student){
+    this.teacher = teacher
+    this.student = student
+  }
+  speech(){
+    console.log(`${this.teacher} is my teacher and my ${this.student} is`);
+    
+  }
+}
+const school = new School('Shahid','Umar')
+school.speech()
   return (
     <div>
       Built In Functions in Js
