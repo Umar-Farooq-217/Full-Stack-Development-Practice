@@ -116,14 +116,18 @@ export default function BuiltInFunctionsInJs() {
 // school.speech()
 
  var stu = {
-  greet : 'Hey'
+  greet : function(message){
+    this.greet = message
+  }
  }
 
  var d = stu;
- stu.greet('hello')
- console.log(d.greet);
+//  stu.greet('hello')
+ stu.greet('bye')
+ console.log(d);
  
-
+var ar = [2,4,6,7]
+ar.push()
   return (
     <div>
       Built In Functions in Js
