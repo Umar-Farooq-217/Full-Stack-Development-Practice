@@ -77,43 +77,53 @@ export default function BuiltInFunctionsInJs() {
 // person1.greet()
 
 // use super in Second Method of Constructor 
-class Animal {
-  constructor(name){
-    this.name = name
+// class Animal {
+//   constructor(name){
+//     this.name = name
     
-  }
-speak(){
-  console.log(`${this.name} makes noise`);
+//   }
+// speak(){
+//   console.log(`${this.name} makes noise`);
   
-}
-}
+// }
+// }
 
-class Dog extends Animal {
-  constructor(name,breed){
-    super(name)
-    this.breed = breed
-  }
-  describe(){
-    console.log(`This is ${this.name} and his breed is ${this.breed}`);
+// class Dog extends Animal {
+//   constructor(name,breed){
+//     super(name)
+//     this.breed = breed
+//   }
+//   describe(){
+//     console.log(`This is ${this.name} and his breed is ${this.breed}`);
     
-  }
-}
-const dog = new Dog('buddy','GERman shefer')
-dog.speak()
-dog.describe()
+//   }
+// }
+// const dog = new Dog('buddy','GERman shefer')
+// dog.speak()
+// dog.describe()
 
-class School {
-  constructor(teacher,student){
-    this.teacher = teacher
-    this.student = student
-  }
-  speech(){
-    console.log(`${this.teacher} is my teacher and my ${this.student} is`);
+// class School {
+//   constructor(teacher,student){
+//     this.teacher = teacher
+//     this.student = student
+//   }
+//   speech(){
+//     console.log(`${this.teacher} is my teacher and my ${this.student} is`);
     
-  }
-}
-const school = new School('Shahid','Umar')
-school.speech()
+//   }
+// }
+// const school = new School('Shahid','Umar')
+// school.speech()
+
+ var stu = {
+  greet : 'Hey'
+ }
+
+ var d = stu;
+ stu.greet('hello')
+ console.log(d.greet);
+ 
+
   return (
     <div>
       Built In Functions in Js
