@@ -129,18 +129,41 @@ export default function BuiltInFunctionsInJs() {
 // var ar = [2,4,6,7]
 // ar.push()
 
-
+function calculation(price){
+  let arr = []
+  console.log(arr);
+  
+  for (let i = 0; i < price.length; i++) {
+    let relief = 0;
+    for (let j = i + 1; j < price.length; j++) {
+      if(price[j] <= price[i]){
+        relief = price[j];
+        break
+      }
+      
+    }
+arr.push(   price[i] - relief)
+    
+  }
+  return arr
+}
+const price = [8,4,6,2,3]
+calculation(price)
   return (
     <div>
-      <div className="flex flex-wrap gap-4">
-        <div className="bg-red-400 text-center text-5xl flex-1 min-w-[400px] row-span-2">item 1</div>
-        <div className="bg-green-400 text-center text-5xl flex-1 min-w-[400px]">item 2</div>
-        <div className="bg-blue-400 text-center text-5xl flex-1 min-w-[400px]">item 3 </div>
-        <div className="bg-black text-center text-5xl flex-1 min-w-[400px]">item 4</div>
-        <div className="bg-pink-400 text-center text-5xl flex-1 min-w-[400px]">item 5</div>
-        <div className="bg-yellow-400 text-center text-5xl flex-1 min-w-[400px]">item 6</div>
-        <div className="bg-gray-600 text-center text-5xl flex-1 min-w-[400px]">item 7</div>
-        <div className="bg-indigo-600 text-center text-5xl flex-1 min-w-[400px]">item 8</div>
+      <div className="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
+        <div className="bg-red-400 text-center text-5xl    md:row-span-4 p-5">item 1</div>
+
+        <div className="lg:col-span-4 md:col-span-2 grid  grid-cols-2 md:grid-cols-2 gap-4">
+          <div className="bg-green-400 text-center text-5xl ">item 2</div>
+        <div className="bg-blue-400 text-center text-5xl ">item 3 </div>
+        <div className="bg-black text-center text-5xl  ">item 4</div>
+        <div className="bg-pink-400 text-center text-5xl ">item 5</div>
+        <div className="bg-yellow-400 text-center text-5xl ">item 6</div>
+        <div className="bg-gray-600 text-center text-5xl  ">item 7</div>
+        </div>
+        
+        <div className="bg-indigo-600 text-center text-5xl lg:row-span-4 ">item 8</div>
       </div>
      
     </div>
