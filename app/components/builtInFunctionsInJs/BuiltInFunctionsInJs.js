@@ -115,22 +115,33 @@ export default function BuiltInFunctionsInJs() {
 // const school = new School('Shahid','Umar')
 // school.speech()
 
- var stu = {
-  greet : function(message){
-    this.greet = message
-  }
- }
+//  var stu = {
+//   greet : function(message){
+//     this.greet = message
+//   }
+//  }
 
- var d = stu;
-//  stu.greet('hello')
- stu.greet('bye')
- console.log(d);
+//  var d = stu;
+// //  stu.greet('hello')
+//  stu.greet('bye')
+//  console.log(d);
  
-var ar = [2,4,6,7]
-ar.push()
+// var ar = [2,4,6,7]
+// ar.push()
+
+
   return (
     <div>
-      Built In Functions in Js
+      <div className="flex flex-wrap gap-4">
+        <div className="bg-red-400 text-center text-5xl flex-1 min-w-[400px] row-span-2">item 1</div>
+        <div className="bg-green-400 text-center text-5xl flex-1 min-w-[400px]">item 2</div>
+        <div className="bg-blue-400 text-center text-5xl flex-1 min-w-[400px]">item 3 </div>
+        <div className="bg-black text-center text-5xl flex-1 min-w-[400px]">item 4</div>
+        <div className="bg-pink-400 text-center text-5xl flex-1 min-w-[400px]">item 5</div>
+        <div className="bg-yellow-400 text-center text-5xl flex-1 min-w-[400px]">item 6</div>
+        <div className="bg-gray-600 text-center text-5xl flex-1 min-w-[400px]">item 7</div>
+        <div className="bg-indigo-600 text-center text-5xl flex-1 min-w-[400px]">item 8</div>
+      </div>
      
     </div>
   )
