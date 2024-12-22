@@ -1,5 +1,4 @@
 'use client'
-
 export default function BuiltInFunctionsInJs() {
   
     // Math.random()
@@ -62,7 +61,7 @@ export default function BuiltInFunctionsInJs() {
 // Basic Constructor
 // First Method 
 
-// class Person  {
+// className Person  {
 //   constructor(name,age){
 //     this.name = name;
 //     this.age = age
@@ -77,7 +76,7 @@ export default function BuiltInFunctionsInJs() {
 // person1.greet()
 
 // use super in Second Method of Constructor 
-// class Animal {
+// className Animal {
 //   constructor(name){
 //     this.name = name
     
@@ -88,7 +87,7 @@ export default function BuiltInFunctionsInJs() {
 // }
 // }
 
-// class Dog extends Animal {
+// className Dog extends Animal {
 //   constructor(name,breed){
 //     super(name)
 //     this.breed = breed
@@ -102,7 +101,7 @@ export default function BuiltInFunctionsInJs() {
 // dog.speak()
 // dog.describe()
 
-// class School {
+// className School {
 //   constructor(teacher,student){
 //     this.teacher = teacher
 //     this.student = student
@@ -129,41 +128,42 @@ export default function BuiltInFunctionsInJs() {
 // var ar = [2,4,6,7]
 // ar.push()
 
-function calculation(price){
-  let arr = []
-  console.log(arr);
+// function calculation(price){
+//   let arr = []
+//   console.log(arr);
   
-  for (let i = 0; i < price.length; i++) {
-    let relief = 0;
-    for (let j = i + 1; j < price.length; j++) {
-      if(price[j] <= price[i]){
-        relief = price[j];
-        break
-      }
+//   for (let i = 0; i < price.length; i++) {
+//     let relief = 0;
+//     for (let j = i + 1; j < price.length; j++) {
+//       if(price[j] <= price[i]){
+//         relief = price[j];
+//         break
+//       }
       
-    }
-arr.push(   price[i] - relief)
+//     }
+// arr.push(   price[i] - relief)
     
-  }
-  return arr
-}
-const price = [8,4,6,2,3]
-calculation(price)
+//   }
+//   return arr
+// }
+// const price = [8,4,6,2,3]
+// calculation(price)
   return (
     <div>
-      <div className="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
-        <div className="bg-red-400 text-center text-5xl    md:row-span-4 p-5">item 1</div>
+   
+      <div classNameName="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
+        <div classNameName="bg-red-400 text-center text-5xl    md:row-span-4 p-5">item 1</div>
 
-        <div className="lg:col-span-4 md:col-span-2 grid  grid-cols-2 md:grid-cols-2 gap-4">
-          <div className="bg-green-400 text-center text-5xl ">item 2</div>
-        <div className="bg-blue-400 text-center text-5xl ">item 3 </div>
-        <div className="bg-black text-center text-5xl  ">item 4</div>
-        <div className="bg-pink-400 text-center text-5xl ">item 5</div>
-        <div className="bg-yellow-400 text-center text-5xl ">item 6</div>
-        <div className="bg-gray-600 text-center text-5xl  ">item 7</div>
+        <div classNameName="lg:col-span-4 md:col-span-2 grid  grid-cols-2 md:grid-cols-2 gap-4">
+          <div classNameName="bg-green-400 text-center text-5xl ">item 2</div>
+        <div classNameName="bg-blue-400 text-center text-5xl ">item 3 </div>
+        <div classNameName="bg-black text-center text-5xl  ">item 4</div>
+        <div classNameName="bg-pink-400 text-center text-5xl ">item 5</div>
+        <div classNameName="bg-yellow-400 text-center text-5xl ">item 6</div>
+        <div classNameName="bg-gray-600 text-center text-5xl  ">item 7</div>
         </div>
         
-        <div className="bg-indigo-600 text-center text-5xl lg:row-span-4 ">item 8</div>
+        <div classNameName="bg-indigo-600 text-center text-5xl lg:row-span-4 ">item 8</div>
       </div>
      
     </div>
