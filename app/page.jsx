@@ -1,7 +1,7 @@
 import React from "react";
 
 // import TsPractice from "./components/tsPractice/TsPractice";
-// import JsPractice from './components/jsPractice/JsPractice'
+import JsPractice from './components/jsPractice/JsPractice'
 // import BuiltInFunctionsInJs from './components/builtInFunctionsInJs/BuiltInFunctionsInJs'
 
 export default function Home() {
@@ -11,8 +11,8 @@ export default function Home() {
   
   return (
     <div >
-      {/* <TsPractice/>
-      <JsPractice/> */}
+      {/* <TsPractice/>*/}
+      <JsPractice/> 
       {/* <BuiltInFunctionsInJs/> */}
       
       <div className="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
