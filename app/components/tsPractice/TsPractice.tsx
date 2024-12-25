@@ -247,6 +247,33 @@ export default function TsPractice() {
 // }
 // console.log(student);
 
+
+class Person {
+  name:string;
+  age:number;
+  hobbies : string[];
+  constructor(name:string,age:number,hobbies:string[]){
+    this.name = name;
+    this.age = age;
+    this.hobbies = hobbies
+  }
+}
+
+class Students extends Person {
+  grade  : number;
+  constructor(name:string,age:number,hobbies:string[],grade:number){
+    super(name,age,hobbies);
+    this.grade = grade
+  }
+}
+
+const person1:Students = new Students('ali',33,['reading','coding'],43) 
+console.log(person1);
+
+
+
+
+
   return (
     <div>
     <h1 >Umar Farooq</h1>
