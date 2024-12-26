@@ -248,28 +248,42 @@ export default function TsPractice() {
 // console.log(student);
 
 
+// class Person {
+//   name:string;
+//   age:number;
+//   hobbies : string[];
+//   constructor(name:string,age:number,hobbies:string[]){
+//     this.name = name;
+//     this.age = age;
+//     this.hobbies = hobbies
+//   }
+// }
+
+// class Students extends Person {
+//   grade  : number;
+//   constructor(name:string,age:number,hobbies:string[],grade:number){
+//     super(name,age,hobbies);
+//     this.grade = grade
+//   }
+// }
+
+// const person1:Students = new Students('ali',33,['reading','coding'],43) 
+// console.log(person1);
+
+// short hand property 
+//public allow key to access parent,child and external
+//protected allows key to access in parent and child
+//private allows key to access only in parent
 class Person {
-  name:string;
-  age:number;
-  hobbies : string[];
-  constructor(name:string,age:number,hobbies:string[]){
-    this.name = name;
-    this.age = age;
-    this.hobbies = hobbies
-  }
+  constructor(public name:string,public age:number){}
+
 }
 
-class Students extends Person {
-  grade  : number;
-  constructor(name:string,age:number,hobbies:string[],grade:number){
-    super(name,age,hobbies);
-    this.grade = grade
-  }
-}
 
-const person1:Students = new Students('ali',33,['reading','coding'],43) 
+const person1 = new Person('umar',43)
 console.log(person1);
-
+person1.name = 'basit'
+console.log(person1.name);
 
 
 
