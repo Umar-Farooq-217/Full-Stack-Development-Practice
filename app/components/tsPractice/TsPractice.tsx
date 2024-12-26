@@ -274,18 +274,51 @@ export default function TsPractice() {
 //public allow key to access parent,child and external
 //protected allows key to access in parent and child
 //private allows key to access only in parent
-class Person {
-  constructor(public name:string,public age:number){}
 
+// inheritance in which we can reuse existing class
+// class Person {
+//   constructor(public name:string,public age:number){}
+
+// }
+// class Students extends Person {
+//   constructor(name:string,age:number,public grade: number){
+//     super(name,age)
+//   }
+// }
+
+
+// const person1 = new Students('umar',43,8)
+// console.log(person1);
+
+
+class BankAccount {
+private _balance :number;
+  constructor(balance:number ){
+    // if(balance < 0){
+    //  console.log('balance is less than 0');
+     
+    // }else{
+    //   console.log('Enjoy your balance');
+      
+    // }
+    this._balance = balance
+  }
+  public set balance(bal:number){
+    if(bal < 0 ){
+      console.log('insufficient balance');
+      return
+    }
+    
+    this._balance = bal
+  }
+  public get balance():number {
+
+return this._balance
+  }
 }
 
-
-const person1 = new Person('umar',43)
-console.log(person1);
-person1.name = 'basit'
-console.log(person1.name);
-
-
+const person = new BankAccount(-6)
+console.log(person.balance);
 
 
   return (
