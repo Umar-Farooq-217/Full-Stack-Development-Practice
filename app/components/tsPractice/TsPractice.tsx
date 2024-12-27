@@ -291,34 +291,44 @@ export default function TsPractice() {
 // console.log(person1);
 
 
-class BankAccount {
-private _balance :number;
-  constructor(balance:number ){
-    // if(balance < 0){
-    //  console.log('balance is less than 0');
+// class BankAccount {
+// private _balance :number;
+//   constructor(balance:number ){
+//     // if(balance < 0){
+//     //  console.log('balance is less than 0');
      
-    // }else{
-    //   console.log('Enjoy your balance');
+//     // }else{
+//     //   console.log('Enjoy your balance');
       
-    // }
-    this._balance = balance
-  }
-  public set balance(bal:number){
-    if(bal < 0 ){
-      console.log('insufficient balance');
-      return
-    }
+//     // }
+//     this._balance = balance
+//   }
+//   public set balance(bal:number){
+//     if(bal < 0 ){
+//       console.log('insufficient balance');
+//       return 
+//     }
     
-    this._balance = bal
-  }
-  public get balance():number {
+//     this._balance = bal
+//   }
+//   public get balance():number {
 
-return this._balance
+// return this._balance
+//   }
+// }
+
+// const person = new BankAccount(-6)
+// console.log(person.balance);
+
+
+// Statice Properties in TS
+
+class Num {
+  public static add(a:number,b:number):number{
+    return a+ b
   }
 }
-
-const person = new BankAccount(-6)
-console.log(person.balance);
+console.log(Num.add(9,5));
 
 
   return (
