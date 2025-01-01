@@ -323,12 +323,13 @@ export default function TsPractice() {
 
 // Statice Properties in TS
 
-class Num {
-  public static add(a:number,b:number):number{
-    return a+ b
-  }
-}
-console.log(Num.add(9,5));
+// class Num {
+//   public static add(a:number,b:number):number{
+//     return a+ b
+//   }
+// }
+// console.log(Num.add(9,5));
+
 
 
   return (

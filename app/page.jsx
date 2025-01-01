@@ -1,8 +1,9 @@
 import React from "react";
 
-import TsPractice from "./components/tsPractice/TsPractice";
-import JsPractice from './components/jsPractice/JsPractice'
+// import TsPractice from "./components/tsPractice/TsPractice";
+// import JsPractice from './components/jsPractice/JsPractice'
 // import BuiltInFunctionsInJs from './components/builtInFunctionsInJs/BuiltInFunctionsInJs'
+import PulseLoading from '../app/components/animatedLoaders/pulseLoading/PulseLoading'
 
 export default function Home() {
 
@@ -11,11 +12,11 @@ export default function Home() {
   
   return (
     <div >
-      <TsPractice/>
-      <JsPractice/> 
+      {/* <TsPractice/>
+      <JsPractice/>  */}
       {/* <BuiltInFunctionsInJs/> */}
       
-      <div className="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
+      {/* <div className="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
         <div className="bg-red-400 text-center text-5xl    md:row-span-4 p-5 h-[800px]">item 1</div>
 
         <div className="lg:col-span-4 md:col-span-2 grid  grid-cols-2 md:grid-cols-2 gap-4  ">
@@ -28,8 +29,8 @@ export default function Home() {
         </div>
         
         <div className=" bg-yellow-600 text-center text-5xl lg:row-span-4 ">item 8</div>
-      </div>
-   
+      </div> */}
+   <PulseLoading/>
 
     </div>
   );
