@@ -4,7 +4,9 @@ export default function PulseLoading() {
   return (
     <div>
       <h1>Pulse Loading</h1>
-      <div className="loading "></div>
+      <div className="loading ">
+        
+      </div>
     </div>
   )
 }

@@ -3,8 +3,8 @@ import React from "react";
 // import TsPractice from "./components/tsPractice/TsPractice";
 // import JsPractice from './components/jsPractice/JsPractice'
 // import BuiltInFunctionsInJs from './components/builtInFunctionsInJs/BuiltInFunctionsInJs'
-import PulseLoading from '../app/components/animatedLoaders/pulseLoading/PulseLoading'
-
+// import PulseLoading from '../app/components/animatedLoaders/pulseLoading/PulseLoading'
+import LaserEffect from '../app/components/textAnimations/laserEffect/LaserEffect'
 export default function Home() {
 
 
@@ -12,9 +12,7 @@ export default function Home() {
   
   return (
     <div >
-      {/* <TsPractice/>
-      <JsPractice/>  */}
-      {/* <BuiltInFunctionsInJs/> */}
+      
       
       {/* <div className="grid lg:grid-cols-6  md:grid-cols-4 gap-5  ">
         <div className="bg-red-400 text-center text-5xl    md:row-span-4 p-5 h-[800px]">item 1</div>
@@ -30,7 +28,7 @@ export default function Home() {
         
         <div className=" bg-yellow-600 text-center text-5xl lg:row-span-4 ">item 8</div>
       </div> */}
-   <PulseLoading/>
+   <LaserEffect/>
 
     </div>
   );
