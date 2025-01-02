@@ -4,7 +4,8 @@ import React from "react";
 // import JsPractice from './components/jsPractice/JsPractice'
 // import BuiltInFunctionsInJs from './components/builtInFunctionsInJs/BuiltInFunctionsInJs'
 // import PulseLoading from '../app/components/animatedLoaders/pulseLoading/PulseLoading'
-import LaserEffect from '../app/components/textAnimations/laserEffect/LaserEffect'
+// import LaserEffect from '../app/components/textAnimations/laserEffect/LaserEffect'
+import DotLoading from '../app/components/animatedLoaders/dotLoading/DotLoading'
 export default function Home() {
 
 
@@ -28,8 +29,9 @@ export default function Home() {
         
         <div className=" bg-yellow-600 text-center text-5xl lg:row-span-4 ">item 8</div>
       </div> */}
-   <LaserEffect/>
+   {/* <LaserEffect/> */}
 
+<DotLoading/>
     </div>
   );
 }
