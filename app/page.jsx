@@ -5,7 +5,8 @@ import React from "react";
 // import BuiltInFunctionsInJs from './components/builtInFunctionsInJs/BuiltInFunctionsInJs'
 // import PulseLoading from '../app/components/animatedLoaders/pulseLoading/PulseLoading'
 // import LaserEffect from '../app/components/textAnimations/laserEffect/LaserEffect'
-import DotLoading from '../app/components/animatedLoaders/dotLoading/DotLoading'
+// import DotLoading from '../app/components/animatedLoaders/dotLoading/DotLoading'
+import FlipCard from './components/cards/flipCard/FlipCard'
 export default function Home() {
 
 
@@ -31,7 +32,8 @@ export default function Home() {
       </div> */}
    {/* <LaserEffect/> */}
 
-<DotLoading/>
+{/* <DotLoading/> */}
+<FlipCard/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './FlipCard.css'
 export default function FlipCard() {
   return (
     <div>
