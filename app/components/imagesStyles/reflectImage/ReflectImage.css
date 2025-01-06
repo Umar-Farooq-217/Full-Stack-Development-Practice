@@ -1,0 +1,7 @@
+.img{
+    -webkit-box-reflect: right;
+    /* this property is used to create image with reflect image */
+}
+.img{
+    -webkit-box-reflect: right 0 linear-gradient(to right,#0000,#0009);
+}
