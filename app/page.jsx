@@ -7,7 +7,8 @@ import React from "react";
 // import LaserEffect from '../app/components/textAnimations/laserEffect/LaserEffect'
 // import DotLoading from '../app/components/animatedLoaders/dotLoading/DotLoading'
 // import FlipCard from './components/cards/flipCard/FlipCard'
-import ReflectImage from './components/imagesStyles/reflectImage/ReflectImage'
+// import ReflectImage from './components/imagesStyles/reflectImage/ReflectImage'
+import ColorBackground from './components/backgrounds/colorfulBackground/ColorBackground'
 export default function Home() {
 
 
@@ -35,7 +36,8 @@ export default function Home() {
 
 {/* <DotLoading/> */}
 {/* <FlipCard/> */}
-<ReflectImage/>
+{/* <ReflectImage/> */}
+<ColorBackground/>
 
 
     </div>
