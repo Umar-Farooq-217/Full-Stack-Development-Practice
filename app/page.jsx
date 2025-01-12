@@ -8,7 +8,10 @@ import React from "react";
 // import DotLoading from '../app/components/animatedLoaders/dotLoading/DotLoading'
 // import FlipCard from './components/cards/flipCard/FlipCard'
 // import ReflectImage from './components/imagesStyles/reflectImage/ReflectImage'
-import ColorBackground from './components/backgrounds/colorfulBackground/ColorBackground'
+// import ColorBackground from './components/backgrounds/colorfulBackground/ColorBackground'
+// import ThreeLayerLoader from './components/animatedLoaders/threeLayerLoader/ThreeLayerLoader'
+// import RightToLeftBackground from './components/animtedButtons/rightToLeftBackground/RightToLeftBackground'
+import OppositeColors from './components/animtedButtons/oppositeColors/OppositeColors'
 export default function Home() {
 
 
@@ -37,8 +40,11 @@ export default function Home() {
 {/* <DotLoading/> */}
 {/* <FlipCard/> */}
 {/* <ReflectImage/> */}
-<ColorBackground/>
+{/* <ColorBackground/> */}
+{/* <ThreeLayerLoader/> */}
+{/* <RightToLeftBackground/> */}
 
+<OppositeColors/>
 
     </div>
   );

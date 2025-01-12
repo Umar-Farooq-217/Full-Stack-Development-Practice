@@ -2,7 +2,7 @@
 margin: 0;
 height: 100vh;
 width: 100%;
-background: linear-gradient(45deg,red,yellow,green,pink,orange,gray,blue,red);
+background: linear-gradient(45deg,red,yellow,green,rgb(211, 10, 43),rgb(168, 110, 3),gray,blue,red);
 background-size: 400% 400%;
 animation: gradient 5s ease infinite;
 }
